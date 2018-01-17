@@ -79,7 +79,7 @@ EmuWindow_SDL2::EmuWindow_SDL2() {
     SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
     SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 0);
 
-    std::string window_title = Common::StringFromFormat("Citra %s| %s-%s| Build date: " + "%4", Common::g_build_name,
+    std::string window_title = Common::StringFromFormat("Citra %s| %s-%s| Build date: " + "%s", Common::g_build_name,
                                                         Common::g_scm_branch, Common::g_scm_desc, Common::g_build_date);
     render_window =
         SDL_CreateWindow(window_title.c_str(),
